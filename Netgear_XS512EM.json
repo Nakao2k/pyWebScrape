@@ -1,0 +1,33 @@
+{
+    "filter_html_tag": "body",
+    "hostname": {
+        "path": "iss/specific/sysInfo.html",
+        "xpath": "//*[@id=\"tbl1\"]/tbody/tr[2]/td[2]/input",
+        "xpath_attr": "value"
+    },
+    "login": {
+        "path": "",
+        "xpath_button": "//*[@id=\"button_Login\"]",
+        "xpath_id": "",
+        "xpath_password": "//*[@id=\"Password\"]"
+    },
+    "logout": {
+        "path": "iss/specific/logout.html"
+    },
+    "lst_html": [
+        "iss/specific/sysInfo.html",
+        "iss/specific/lbdt_configuration.html",
+        "iss/specific/powerSaving.html",
+        "iss/specific/plusconf.html",
+        "iss/specific/lag_settings.html",
+        "iss/specific/Cf8021q.html",
+        "iss/specific/vlan_pvidsetting.html"
+    ],
+    "lst_script": [],
+    "protocol": "http://",
+    "session_id": {
+        "id": "Gambit",
+        "xpath": "//*[@id=\"gambit\"]",
+        "xpath_attr": "value"
+    }
+}

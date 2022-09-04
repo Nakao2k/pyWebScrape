@@ -1,0 +1,28 @@
+filter_html_tag: body
+hostname:
+  path: ''
+  xpath: //*[@id="device"]
+  xpath_attr: text
+login:
+  path: ''
+  xpath_button: //*[@id="login"]/div/p[1]/a
+  xpath_id: //*[@id="loginusr"]
+  xpath_password: //*[@id="loginpwd"]
+logout:
+  path: ''
+lst_html:
+- basic_main.php
+- amgr_mape.php
+- air_basic_main2.php
+- air24g_main_pri.php
+- air5g_main_pri.php
+- mac_filter_main.php
+- wps_main.php
+- wifi_notify.php
+- info_mape_main.php
+lst_script: []
+protocol: http://
+session_id:
+  id: ''
+  xpath: ''
+  xpath_attr: ''
