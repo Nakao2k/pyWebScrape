@@ -35,6 +35,7 @@ PARAM_LST_PAGES = [
     "iss/specific/sysInfo.html",
     "iss/specific/lbdt_configuration.html",
     "iss/specific/powerSaving.html",
+    "iss/specific/plusconf.html",
     "iss/specific/lag_settings.html",
     "iss/specific/Cf8021q.html",
     "iss/specific/vlan_pvidsetting.html"
