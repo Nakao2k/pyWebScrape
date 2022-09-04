@@ -1,0 +1,11 @@
+name	attribute	xpath
+Product Name	text	//*[@id="tbl1"]/tbody/tr[1]/td[2]
+Switch Name	value	//*[@id="tbl1"]/tbody/tr[2]/td[2]/input
+Serial Number	text	//*[@id="tbl1"]/tbody/tr[3]/td[2]
+MAC Address	text	//*[@id="tbl1"]/tbody/tr[4]/td[2]
+Firmware Version	text	//*[@id="tbl1"]/tbody/tr[5]/td[2]
+DHCP Mode	data-value	//*[@id="dhcpmode"]
+IP Address	value	//*[@id="tbl1"]/tbody/tr[7]/td[2]/input
+Subnet Mask	value	//*[@id="tbl1"]/tbody/tr[8]/td[2]/input
+Gateway Address	value	//*[@id="tbl1"]/tbody/tr[9]/td[2]/input
+Management VLAN ID	value	//*[@id="tbl1"]/tbody/tr[10]/td[2]/input

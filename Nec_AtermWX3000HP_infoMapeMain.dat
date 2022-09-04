@@ -1,0 +1,7 @@
+name	attribute	xpath
+装置名	text	//*[@id="tglbox1"]/div/table/tbody/tr[1]/td
+ファームウェアバージョン	text	//*[@id="tglbox1"]/div/table/tbody/tr[2]/td
+MACアドレス(WAN)	text	//*[@id="tglbox1"]/div/table/tbody/tr[3]/td
+MACアドレス(LAN)	text	//*[@id="tglbox1"]/div/table/tbody/tr[4]/td
+LAN側 IPアドレス	text	//*[@id="st_ip_address"]
+WAN側 IPアドレス	text	//*[@id="mape_ip"]
