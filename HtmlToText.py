@@ -99,6 +99,9 @@ if __name__ == '__main__':
 
             dictRowOutput[row['name']] = value
 
+        # ファイル名を末列に追加
+        dictRowOutput['File'] = file
+
         dictOutput.append(dictRowOutput)
 
     # cOutFile = getOutputFile(argParamTxt, ".txt")
