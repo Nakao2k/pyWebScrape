@@ -1,0 +1,13 @@
+name	attribute	xpath
+Port 01	text	//*[@id="tbl1"]/tbody/tr[3]/td[3]
+Port 02	text	//*[@id="tbl1"]/tbody/tr[4]/td[3]
+Port 03	text	//*[@id="tbl1"]/tbody/tr[5]/td[3]
+Port 04	text	//*[@id="tbl1"]/tbody/tr[6]/td[3]
+Port 05	text	//*[@id="tbl1"]/tbody/tr[7]/td[3]
+Port 06	text	//*[@id="tbl1"]/tbody/tr[8]/td[3]
+Port 07	text	//*[@id="tbl1"]/tbody/tr[9]/td[3]
+Port 08	text	//*[@id="tbl1"]/tbody/tr[10]/td[3]
+Port 09	text	//*[@id="tbl1"]/tbody/tr[11]/td[3]
+Port 10	text	//*[@id="tbl1"]/tbody/tr[12]/td[3]
+Port 11	text	//*[@id="tbl1"]/tbody/tr[13]/td[3]
+Port 12	text	//*[@id="tbl1"]/tbody/tr[14]/td[3]
