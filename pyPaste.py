@@ -1,0 +1,42 @@
+import os
+import sys
+import pandas as pd
+
+if __name__ == "__main__":
+    # 引数の取得
+    args = sys.argv
+
+    # 必須引数の数を確認
+    if len(args) <= 2:
+        print("引数が足りません")
+        exit(1)
+
+    # 必須引数の取得
+    arg_a_file = args[1]
+    arg_b_file = args[2]
+
+    # arg_a_file = "Netgear_XS512EM_sysInfo.dat.txt"
+    # arg_b_file = "Netgear_XS512EM_vlan_pvidsetting.dat.txt"
+
+    # 設定ファイルの存在チェック
+    if not os.path.isfile(arg_a_file):
+        print(arg_a_file + " doesn't exist")
+        exit(1)
+
+    if not os.path.isfile(arg_b_file):
+        print(arg_b_file + " doesn't exist")
+        exit(1)
+
+    #https://life-freedom888.com/python-csv-ketugou-yoko/
+    df1 = pd.read_csv(arg_a_file, sep='\t')
+    df2 = pd.read_csv(arg_b_file, sep='\t')
+    df_concat = pd.concat([df1, df2], axis=1)
+    #df_concat.to_csv("gousei.csv", index = None)
+
+    # データ内の改行コードを削除
+    #df_concat = df_concat.replace('\r', '', regex=True)
+
+    df_concat.to_csv(sys.stdout, index=None, sep='\t')
+    #df1.to_csv(sys.stdout, index=None, sep='\t')
+
+    exit(0)
