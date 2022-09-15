@@ -16,8 +16,8 @@ if __name__ == "__main__":
     arg_b_file = args[2]
     arg_out_file = args[3]
 
-    # arg_a_file = "Netgear_XS512EM_sysInfo.dat.txt"
-    # arg_b_file = "Netgear_XS512EM_vlan_pvidsetting.dat.txt"
+    # arg_a_file = "Netgear_XS512EM_sysInfo.conf.txt"
+    # arg_b_file = "Netgear_XS512EM_vlan_pvidsetting.conf.txt"
 
     # 入力ファイルの存在チェック
     if not os.path.isfile(arg_a_file):
