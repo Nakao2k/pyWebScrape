@@ -18,7 +18,7 @@ if __name__ == "__main__":
     # arg_a_file = "Netgear_XS512EM_sysInfo.dat.txt"
     # arg_b_file = "Netgear_XS512EM_vlan_pvidsetting.dat.txt"
 
-    # 設定ファイルの存在チェック
+    # 入力ファイルの存在チェック
     if not os.path.isfile(arg_a_file):
         print(arg_a_file + " doesn't exist")
         exit(1)
@@ -36,6 +36,7 @@ if __name__ == "__main__":
     # データ内の改行コードを削除
     #df_concat = df_concat.replace('\r', '', regex=True)
 
+    # 標準出力に結合結果を出力
     df_concat.to_csv(sys.stdout, index=None, sep='\t')
     #df1.to_csv(sys.stdout, index=None, sep='\t')
 
