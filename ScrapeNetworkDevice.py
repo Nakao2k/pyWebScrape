@@ -1,14 +1,18 @@
+### Requirements
+# pip install webdriver_manager
+# pip install pyyaml
+# pip install bs4
+# pip install selenium
+
 import json
 import os
 import sys
 import time
-# chromedriver_binaryをインポートしないとselenium.webdriverは動かない
-import chromedriver_binary
+from webdriver_manager.chrome import ChromeDriverManager
 import yaml
 
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
-# 事前に　pip install chromedriver-binary==104.0.5112.20.0
 from selenium import webdriver
 
 # 設定ファイルの側
@@ -176,7 +180,7 @@ if __name__ == '__main__':
         session_id = ""
 
         # Webブラウザのインスタンス化
-        driver = webdriver.Chrome(options=options)
+        driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
         # Loginページへの接続
         fullUrl = clsFullUrl.getFullUrl(cfg["login"]["path"])

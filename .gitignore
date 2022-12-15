@@ -7,3 +7,6 @@
 /testOutDir/
 /test.py
 /_olds/*_mypc.bat
+/.venv/
+/.vscode/
+
