@@ -14,6 +14,7 @@ import yaml
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 
 # 設定ファイルの側
 cfg = {
@@ -180,7 +181,9 @@ if __name__ == '__main__':
         session_id = ""
 
         # Webブラウザのインスタンス化
-        driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+        #driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+        service = Service(executable_path=ChromeDriverManager().install())
+        driver = webdriver.Chrome(options=options, service=service)
 
         # Loginページへの接続
         fullUrl = clsFullUrl.getFullUrl(cfg["login"]["path"])
